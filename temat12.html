@@ -48,36 +48,23 @@
             </nav>
             <section>
                 <article>
-                    <p style="text-align: center"><h1>Testowanie i diagnozowanie sprzętu komputerowego, rozbudowa i unowocześnianie zestawu komputerowego.</h1></p>
+                    <p style="text-align: center"><h1>Tworzenie tabel przechowujących dane. Relacje między tabelami.</h1></p>
                     <br>
-                    Powinniśmy co jaki czas testować swój komputer w celu sprawdzenia czy np. nasz komputer sie nieprzegrzewa lub sprawdzić wydajność poszczególnych części które może będziemy musieli wymienić.
+                    W modelu relacyjnym baz danych wszystkie dane są przechowywane w dwuwymiarowych tabelach (relacjach). W skład bazy danych może wchodzić wiele relacji. Tabela to zbiór powiązanych ze sobą danych.
                     <br>
-                    <br>
-                    Do diagnozowania możemy ściągnąć nastepujące programy:
-                    <br>
-                    <br>
-                    <ol>
-                        <li>CPU-Z pokazuje nam informacje o każdym elemencie naszego komputera i monituruje ich prace</li>
-                        <li>HWMonitor pokazuje nam temperature różnych elementów komputera dzieki czemu widzimy czy komputer sie nie przegrzewa</li>
-                        <li>GPU-Z pokazuje nam informacje o naszej karcie graficznej</li>
-                        <li>HAEVEN benchmark ten program testuje wydajność naszej karty graficznej</li>
-                        </ol>
-                    <br>
-                    <img src="heaven.jpg" alt="heaven">
-                    (benchmark HEAVEN)
+                    W każdej tabeli musi znaleźć się pole, które dla każdego rekordu będzie przyjmowało inną, niepowtarzalną wartość. Pole takie jest potrzebne do jednoznacznego zdefiniowania rekordu. To klucz podstawowy, nazywany również kluczem głównym.
                     <br>
                     <br>
-                    Na przeciągu kilku lat napewno wyjdą aktualizacje rożnych gier jak i programów co spowoduje że nas komputer będzie sobie radził z nimi coraz słabiej i będziemy musieli wymienić pewne jego komponenty. Jeśli zauważymy że tak sie dzieje powinniśmy sprawdzić za pomocą rożnych programów co potrzebuje wymiany lub rozbudowy. Najczęszczymi czynnościami jakie będziemy musieli wykonać mogą być:
+                    <img src="kluczp.jpg" alt="kluczp">
                     <br>
-                    <br>
+                    <b>Wyróżniamy trzy rodzaje relacji:</b>
                     <ul>
-                        <li>wyczyszczenie komputera za pomocą sprężonego powietrza</li>
-                        <li>dołożenie kolejnej kości pamięci RAM</li>
-                        <li>dokupienie drugiego dysku</li>
-                        <li>wymienić chłodzenie procesora na wydajniejszy lub dołożenie wentylatorów w obudowie</li>
-                        <li>po pewnym czasie żeby grać znowu w najnowsze gry będziemy musieli wymienić karte graficzna na bardziej wydajniejszą</li>
-                        <li>wymienić paste termoprzewodzącą</li>
+                        <li><u>jeden do jednego</u> – w tego typu relacji jednemu rekordowi z tabeli A odpowiada tylko jeden wiersz z tabeli B. Rodzaj ten występuje stosunkowo rzadko, ponieważ wszystkie informacje przechowywane w ten sposób można zamieścić w jednej tabeli.</li>
+                        <li><u>jeden do wielu</u> – jednemu rekordowi z tabeli A odpowiada wiele rekordów z tabeli B. Jest to najpowszechniejszy typ relacji.</li>
+                        <li><u>wiele do wielu</u> – rekord w tabeli A może mieć wiele dopasowanych wiele wierszy z tabeli B oraz odwrotnie – rekord z tabeli B może mieć dopasowanych wiele wierszy z tabeli A. Taki typ jest możliwy do zdefiniowania tylko poprzez dodanie do modelu trzeciej tabeli (zwanej tabelą łącza), w której będą znajdowały się wartości kluczy podstawowych tabel A oraz B</li>
                         </ul>
+                    <br>
+                    <img src="relacje.jpg" alt="relacje">
                     <br>
                     <br>
                 </article>

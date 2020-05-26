@@ -48,36 +48,41 @@
             </nav>
             <section>
                 <article>
-                    <p style="text-align: center"><h1>Testowanie i diagnozowanie sprzętu komputerowego, rozbudowa i unowocześnianie zestawu komputerowego.</h1></p>
+                    <p style="text-align: center"><h1>Tworzenie formularzy w serwisie internetowym.</h1></p>
                     <br>
-                    Powinniśmy co jaki czas testować swój komputer w celu sprawdzenia czy np. nasz komputer sie nieprzegrzewa lub sprawdzić wydajność poszczególnych części które może będziemy musieli wymienić.
-                    <br>
-                    <br>
-                    Do diagnozowania możemy ściągnąć nastepujące programy:
+                    Formularze to jedne z najciekawszych elementów stron internetowych. Pozwalają one autorom stron uzyskiwać informację od czytelników, zaś tym ostatnim, na przykład, wypełniać ankiety czy zamawiać jakieś towary i usługi.
                     <br>
                     <br>
-                    <ol>
-                        <li>CPU-Z pokazuje nam informacje o każdym elemencie naszego komputera i monituruje ich prace</li>
-                        <li>HWMonitor pokazuje nam temperature różnych elementów komputera dzieki czemu widzimy czy komputer sie nie przegrzewa</li>
-                        <li>GPU-Z pokazuje nam informacje o naszej karcie graficznej</li>
-                        <li>HAEVEN benchmark ten program testuje wydajność naszej karty graficznej</li>
-                        </ol>
+                    Przykładowy formularz:
                     <br>
-                    <img src="heaven.jpg" alt="heaven">
-                    (benchmark HEAVEN)
-                    <br>
-                    <br>
-                    Na przeciągu kilku lat napewno wyjdą aktualizacje rożnych gier jak i programów co spowoduje że nas komputer będzie sobie radził z nimi coraz słabiej i będziemy musieli wymienić pewne jego komponenty. Jeśli zauważymy że tak sie dzieje powinniśmy sprawdzić za pomocą rożnych programów co potrzebuje wymiany lub rozbudowy. Najczęszczymi czynnościami jakie będziemy musieli wykonać mogą być:
-                    <br>
-                    <br>
-                    <ul>
-                        <li>wyczyszczenie komputera za pomocą sprężonego powietrza</li>
-                        <li>dołożenie kolejnej kości pamięci RAM</li>
-                        <li>dokupienie drugiego dysku</li>
-                        <li>wymienić chłodzenie procesora na wydajniejszy lub dołożenie wentylatorów w obudowie</li>
-                        <li>po pewnym czasie żeby grać znowu w najnowsze gry będziemy musieli wymienić karte graficzna na bardziej wydajniejszą</li>
-                        <li>wymienić paste termoprzewodzącą</li>
-                        </ul>
+                    <form action="mailto:twój_adres_poczty@domena" method="post" enctype="text/plain"><div>
+                        <input name="Imię">Podaj swoje imię<br>
+                        <input name="Nazwisko">Podaj swoje nazwisko
+                        <p>Podaj swoją płeć:</p>
+                        <input type="radio" name="Płeć" value="Kobieta">Kobieta
+                        <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
+                        <p>Ile masz lat?</p>
+                        <input type="radio" name="Wiek" value="mniej niż 15">mniej niż 10<br>
+                        <input type="radio" name="Wiek" value="15-19">11-20<br>
+                        <input type="radio" name="Wiek" value="20-29">21-30<br>
+                        <input type="radio" name="Wiek" value="30-39">31-40<br>
+                        <input type="radio" name="Wiek" value="40-60">41-60<br>
+                        <input type="radio" name="Wiek" value="więcej niż 60">więcej niż 60 
+                        <p>Jakiej przeglądarki internetowej używasz?</p>
+                        <select name="Przeglądarka">
+                            <option selected>Internet Explorer</option>
+                            <option>Netscape</option>
+                            <option>Opera</option>
+                            <option>Mozilla</option>
+                            <option>Chrome</option>
+                            <option>Inna</option>
+                        </select>
+                        <p>Podaj swój komentarz:</p>
+                        <textarea name="Komentarz" cols="50" rows="10">Twój komentarz...</textarea>
+                        <br><br><br>
+                        <input type="submit" value="Wyślij formularz">
+                        <input type="reset" value="Wyczyść dane">
+                        </div></form>
                     <br>
                     <br>
                 </article>
